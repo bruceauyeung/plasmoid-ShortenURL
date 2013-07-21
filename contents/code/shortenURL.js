@@ -24,16 +24,22 @@ var serviceProviders = [
         "name": "is.gd",
         "httpMethod":"GET",
         "spURLTemplate":"http://is.gd/create.php?format=simple&url=%url%",
-        "postDataTemplate" : null,
         "respHandler": null
     },
     {
         "name": "tinyurl.com",
         "httpMethod":"GET",
         "spURLTemplate":"http://tinyurl.com/api-create.php?url=%url%",
-        "postDataTemplate" : null,
         "respHandler": null        
     }
+    ,
+    {
+        "name": "tinyurl.ms",
+        "httpMethod":"GET",
+        "spURLTemplate":"http://tinyurl.ms/index.php?api=1&return_url_text=1&longUrl=%url%",
+        "respHandler": null        
+    }
+    
     
     /**,
     {

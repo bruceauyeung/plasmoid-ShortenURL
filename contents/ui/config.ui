@@ -50,6 +50,11 @@
       </property>
      </item>      
    
+     <item>
+      <property name="text">
+       <string>tinyurl.ms</string>
+      </property>
+     </item>     
     </widget>    
    </item>
    
