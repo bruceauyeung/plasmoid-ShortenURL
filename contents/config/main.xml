@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="serviceProvider" type="Int">
+      <label>what short url service provider is selected</label>
+      <default>0</default>
+    </entry>
+    <entry name="traceEnabled" type="Bool">
+      <label>whether or not to print trace information</label>
+      <default>false</default>
+    </entry>    
+  </group>
+
+</kcfg>
