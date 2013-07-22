@@ -34,6 +34,12 @@
      
      <item>
       <property name="text">
+       <string>flavr.fi</string>
+      </property>
+     </item>
+     
+     <item>
+      <property name="text">
        <string>goo.gl</string>
       </property>
      </item>
@@ -44,6 +50,24 @@
       </property>
      </item>
 
+     <item>
+      <property name="text">
+       <string>miniurl.com</string>
+      </property>
+     </item>
+     
+     <item>
+      <property name="text">
+       <string>qurl.com</string>
+      </property>
+     </item>
+     
+     <item>
+      <property name="text">
+       <string>tastyurls.com</string>
+      </property>
+     </item> 
+     
      <item>
       <property name="text">
        <string>tinyurl.com</string>

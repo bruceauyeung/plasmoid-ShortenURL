@@ -1,6 +1,16 @@
+Object.prototype.each = function (callback) {
+    for ( propName in this ) {
+      if ( this.hasOwnProperty( propName ) && typeof this[propName] !== "function" ) {
+        callback( propName, this[propName] );
+      }
+    }
+};
+Object.prototype.isString = function(){
+    return typeof this == "string" || (typeof this == "object" && this.constructor === String);
+};
 String.prototype.trim = function() {
     return this.replace(/^\s+|\s+$/g,"");
-}
+};
 String.prototype.replaceAll = function(stringToFind,stringToReplace){
     var temp = this;
     var index = temp.indexOf(stringToFind);
@@ -9,10 +19,18 @@ String.prototype.replaceAll = function(stringToFind,stringToReplace){
         index = temp.indexOf(stringToFind);
     }
     return temp;
-}
+};
+String.prototype.equalsIgnoreCase = function(another){
+    if(another.isString()){
+        var areEqual = this.toUpperCase() === another.toUpperCase();
+        return areEqual;
+    }
+    return false;
+    
+};
 Array.prototype.contains = function(v) {
   return this.indexOf(v) > -1;
-}
+};
 Array.prototype.containsIgnoreCase = function(v) {
     
     var i = this.length;
@@ -20,7 +38,7 @@ Array.prototype.containsIgnoreCase = function(v) {
         if (this[i].toLowerCase() === v.toLowerCase()) return true;
     }
     return false;
-}
+};
 function getTempFile(suffix){
     if(!suffix){
         suffix = ".tmp";
