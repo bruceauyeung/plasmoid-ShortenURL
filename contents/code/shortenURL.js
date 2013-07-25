@@ -90,13 +90,15 @@ var serviceProviders = [
     */
 ]
 function execute(longURL, spSeq){
+    Log.trace("URL:"+longURL);
     var xhr = new XMLHttpRequest();
     var sp = serviceProviders[spSeq];
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
             if (xhr.status == 200)
             {
-                Log.trace("got response from " + sp.name);
+                Log.trace("response received from " + sp.name);
+                board.text="response received from " + sp.name;
                 var fileContent = xhr.responseText;
                 Log.trace("responseText:" + fileContent);
                 if(fileContent){
@@ -106,8 +108,12 @@ function execute(longURL, spSeq){
                         var shortURL = fileContent;
                     }
                     
-                    plasmoid.runCommand("sh", ["-c", "python ./contents/code/clip.py " + shortURL]);
-                    Log.trace("short url copied to clipboard...");
+                    //plasmoid.runCommand("sh", ["-c", "pwd>/tmp/pwd.1.log;python ./contents/code/clip.py " + shortURL]);
+                    clipboardCopier.text = shortURL;
+                    clipboardCopier.selectAll();
+                    clipboardCopier.copy();
+                    Log.trace("short url copied into clipboard");
+                    board.text="short url copied into clipboard";
                     
                 }else{
                     Log.trace("failed to shorten this url.");

@@ -20,9 +20,10 @@ String.prototype.replaceAll = function(stringToFind,stringToReplace){
     }
     return temp;
 };
-String.prototype.equalsIgnoreCase = function(another){
-    if(another.isString()){
-        var areEqual = this.toUpperCase() === another.toUpperCase();
+String.prototype.equalsIgnoreCase = function(otherStr){
+    
+    if(otherStr != undefined && otherStr.isString()){
+        var areEqual = this.toUpperCase() === otherStr.toUpperCase();
         return areEqual;
     }
     return false;

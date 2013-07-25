@@ -6,7 +6,7 @@ import "../code/utils.js" as Utils
 import "../code/config.js" as Config
 import "../code/shortenURL.js" as ShortenURL
 Rectangle {
-     width: 200
+     width: 220
      height: 100
      color: "white"
      border.color: "grey"
@@ -18,7 +18,12 @@ Rectangle {
         property int minimumWidth: paintedWidth
         property int minimumHeight: paintedHeight
         text: "drop any url here...";
-    }     
+    } 
+    TextEdit {
+        id: clipboardCopier
+        visible: false
+        text: ""
+    }    
      DropArea {
         enabled: true
         anchors.fill: parent
@@ -28,7 +33,7 @@ Rectangle {
             //but event.mimeData.text holds value either when an url is dropped or a normal text is dropped
             //Log.trace("URL:"+event.mimeData.url);
             var originURL = event.mimeData.text;
-            Log.trace("URL:"+originURL);
+            
             ShortenURL.execute(originURL, Config.config.serviceProvider);
         }
     }

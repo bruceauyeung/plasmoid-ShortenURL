@@ -129,7 +129,7 @@
    <item row="3" column="1">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>$PLASMOID_HWMON_BUILD_TIME</string>
+      <string>$PLASMOID_SHORTENURL_BUILD_TIME</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeft|Qt::AlignVCenter</set>
