@@ -18,12 +18,12 @@ currently the following URL shortener is supported:
   
   
 TODO:  
-- [ ] more beautiful UI
-- [ ] support copying an url text into text area to generate short urls
+>1. more beautiful UI
+>1. support copying an url text into text area to generate short urls
 
 installation:
-+ download the file plasmoid-ShortenURL.plasmoid and save it to any directory you like.
-+ run the following command to install this plasmoid:
+>1. download the file plasmoid-ShortenURL.plasmoid and save it to any directory you like.
+>1. run the following command to install this plasmoid:
   
 ```bash
 plasmapkg -i /path/to/plasmoid-ShortenURL.plasmoid
