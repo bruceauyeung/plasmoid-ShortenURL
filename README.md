@@ -6,15 +6,15 @@ a plasmoid that helps shorten your urls quickly.you can drag an url text, or an 
   
 currently the following URL shortener is supported:
   
-* 126.am
-* flavr.fi
-* goo.gl
-* is.gd
-* miniurl.com
-* qurl.com
-* tastyurls.com
-* tinyurl.com
-* tinyurl.ms
+>1. 126.am
+>1. flavr.fi
+>1. goo.gl
+>1. is.gd
+>1. miniurl.com
+>1. qurl.com
+>1. tastyurls.com
+>1. tinyurl.com
+>1. tinyurl.ms
   
   
 TODO:  
