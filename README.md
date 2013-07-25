@@ -4,7 +4,7 @@ plasmoid-ShortenURL
 a plasmoid that helps shorten your urls quickly.you can drag an url text, or an url link in web page , or an url link from web browser address bar onto this plasmoid, then this plasmoid will request the specified online url shortener to generate for you.
   
   
-currently the following URL shortener is supported:
+currently the following URL shorteners are supported:
   
 >1. 126.am
 >1. flavr.fi
