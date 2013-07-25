@@ -18,5 +18,22 @@ currently the following URL shortener is supported:
   
   
 TODO:  
-* more beautiful UI
-* support copying an url text into text area to generate short urls
+- [ ] more beautiful UI
+- [ ] support copying an url text into text area to generate short urls
+
+installation:
++ download the file plasmoid-ShortenURL.plasmoid and save it to any directory you like.
++ run the following command to install this plasmoid:
+  
+```bash
+plasmapkg -i /path/to/plasmoid-ShortenURL.plasmoid
+```
+
+
+if you have already installed this plasmoid,run the following command to update this plasmoid:
+  
+```bash
+plasmapkg -u /path/to/plasmoid-ShortenURL.plasmoid
+```
+  
+then remove this plasmoid from panel and add it again.
